@@ -1,1 +1,11 @@
-<template><div class="wrap page-top contact"><div class="eyebrow">CONNECT / COLLABORATE</div><h1 class="page-title">Let's talk<span class="dot">.</span></h1><p class="page-intro">Interested in collaborating, working together or discussing an engineering opportunity? I'd love to hear about it.</p><a class="contact-email" href="mailto:tiisoh1998@gmail.com">tiisoh1998@gmail.com ↗</a><div class="contact-links"><a href="https://github.com/TiiCoder28" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></template>
+<template>
+<div class="wrap page-top contact"><div class="eyebrow">CONNECT / COLLABORATE</div><h1 class="page-title">Let's talk<span class="dot">.</span></h1><p class="page-intro">Interested in collaborating, working together or discussing an engineering opportunity? I'd love to hear about it.</p><a class="contact-email" href="mailto:tiisoh1998@gmail.com">tiisoh1998@gmail.com ↗</a><div class="contact-links"><a href="https://github.com/TiiCoder28" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div>
+</template>
+
+<script setup>
+// Static page. Behaviour will be added as features are implemented.
+</script>
+
+<style scoped>
+/* Component-specific styles live here; shared design tokens and utilities are in Tailwind. */
+</style>
