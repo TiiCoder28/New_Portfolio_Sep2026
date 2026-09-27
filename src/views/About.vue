@@ -1,1 +1,11 @@
-<template><div class="wrap page-top about-layout"><div><div class="eyebrow">THE PERSON BEHIND THE WORK</div><h1 class="page-title">Hello, I'm Tiisetso<span class="dot">.</span></h1><p class="page-intro">I build AI-powered applications, backend services and practical software for real-world needs. My experience includes independent product development, client delivery and enterprise regression testing in financial services.</p><p>I'm drawn to thoughtful systems: technology that reduces friction, connects people and information, and makes everyday tasks easier.</p><h2>Areas I work in</h2><p>Applied AI & LLM integration · Python and FastAPI · REST APIs · Databases · Cloud deployment · Enterprise QA and automation.</p><RouterLink class="text-link" to="/contact">Let's connect ↗</RouterLink></div><div class="portrait-placeholder" role="img" aria-label="Portrait space reserved for Tiisetso's approved professional photograph"><span>PORTRAIT</span><strong>A little more human.</strong><small>Your professional photograph will appear here.</small></div></div></template>
+<template>
+<div class="wrap page-top about-layout"><div><div class="eyebrow">THE PERSON BEHIND THE WORK</div><h1 class="page-title">Hello, I'm Tiisetso<span class="dot">.</span></h1><p class="page-intro">I build AI-powered applications, backend services and practical software for real-world needs. My experience includes independent product development, client delivery and enterprise regression testing in financial services.</p><p>I'm drawn to thoughtful systems: technology that reduces friction, connects people and information, and makes everyday tasks easier.</p><h2>Areas I work in</h2><p>Applied AI & LLM integration · Python and FastAPI · REST APIs · Databases · Cloud deployment · Enterprise QA and automation.</p><RouterLink class="text-link" to="/contact">Let's connect ↗</RouterLink></div><div class="portrait-placeholder" role="img" aria-label="Portrait space reserved for Tiisetso's approved professional photograph"><span>PORTRAIT</span><strong>A little more human.</strong><small>Your professional photograph will appear here.</small></div></div>
+</template>
+
+<script setup>
+// Static page. Behaviour will be added as features are implemented.
+</script>
+
+<style scoped>
+/* Component-specific styles live here; shared design tokens and utilities are in Tailwind. */
+</style>
