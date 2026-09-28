@@ -18,6 +18,8 @@ export const projects = [
   },
   {
     slug:'betbetter', number:'02', name:'BetBetter', category:'Sports analytics · Data applications', year:'2026',
+    logo:'/images/betbetter/logo.png', logoAlt:'BetBetter logo — smarter predictions, better decisions',
+    live:'https://bet-better-rho.vercel.app/dashboard',
     summary:'A sports analytics interface presenting market information, probability estimates, revisions and uncertainty in one reviewable experience.',
     role:'Full-stack developer', stack:['FastAPI','PostgreSQL','AWS EC2','Data visualisation'],
     image:'/images/betbetter/hero.webp', imageAlt:'BetBetter Brazil versus Morocco fixture analysis dashboard',
