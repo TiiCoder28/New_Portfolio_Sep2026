@@ -15,7 +15,7 @@ Run the frontend commands **from the frontend folder**, not the repository root:
 
 ```powershell
 cd frontend
-npm ci
+npm install
 npm run dev
 npm run build
 ```
@@ -36,3 +36,5 @@ Open the localhost URL printed by Vite (normally http://localhost:5173). For a h
 - Grounded portfolio chatbot with a secured backend.
 
 Do not commit API keys, confidential client information or unapproved screenshots.
+
+> Dependency repair note: Vite is pinned to the compatible v6 range for @vitejs/plugin-vue v5. The incompatible old lockfile was removed. Run `npm install` inside `frontend/` to regenerate `package-lock.json`; commit the generated lockfile before restoring `npm ci` in CI. Do not use `--force` or `--legacy-peer-deps`.

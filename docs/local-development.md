@@ -5,7 +5,7 @@
 1. Install a current Node.js 22 LTS release and Git.
 2. Clone: `git clone https://github.com/TiiCoder28/New_Portfolio_Sep2026.git`
 3. `cd New_Portfolio_Sep2026`
-4. Work on `main` or your chosen feature branch. `cd frontend`, then `npm ci` and `npm run dev`.
+4. Work on `main` or your chosen feature branch. `cd frontend`, then `npm install` and `npm run dev`.
 5. Open the localhost URL printed by Vite (normally http://localhost:5173).
 
 All frontend tooling and the lockfile are under `frontend/`; do not run `npm run build` at the repository root. From the root you can use `npm --prefix frontend run build`.
@@ -14,8 +14,10 @@ All frontend tooling and the lockfile are under `frontend/`; do not run `npm run
 
 From the repository root, run `powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\Sync-Portfolio.ps1 -Branch main`. The script stops if you have uncommitted changes, untracked files, are on another branch, cannot fetch, or need a non-fast-forward merge. It never resets or overwrites work.
 
-Optionally configure Windows Task Scheduler to run that command with **Start in** set to your repository root. Keep `npm run dev` running from `frontend/`; Vite refreshes changed source files. Run `npm ci` again when frontend dependency manifests change. Restart the dev server for configuration changes.
+Optionally configure Windows Task Scheduler to run that command with **Start in** set to your repository root. Keep `npm run dev` running from `frontend/`; Vite refreshes changed source files. Run `npm install` again when frontend dependency manifests change. Restart the dev server for configuration changes.
 
 GitHub Actions builds from `frontend/` and caches `frontend/package-lock.json`. Successful CI is not a substitute for review; require its check before merging into `main`.
 
 Do not use `git reset --hard`, force pulls or automatic stash/pop in a background script. Never commit `.env` or credentials.
+
+Until the regenerated compatible `frontend/package-lock.json` is committed, run `npm install` instead of `npm ci`. Once committed, use `npm ci` for reproducible local and CI builds.
