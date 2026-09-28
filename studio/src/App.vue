@@ -124,7 +124,7 @@ async function save(){
     const kind=tab.value
     const original=editing.value
     const fields=kind==='projects'?['title','summary','category','hero_asset_path','github_url','live_url','featured','sort_order','status']:['title','excerpt','category','cover_asset_path','status']
-    const payload=Object.fromEntries(fields.filter(k=>Object.prototype.hasOwnProperty.call(original,k)).map(k=>[k,original[k]||null]))
+    const payload=Object.fromEntries(fields.filter(k=>Object.prototype.hasOwnProperty.call(original,k)).map(k=>[k,original[k] ?? null]))
     if(kind==='projects'){payload.featured=Boolean(original.featured);payload.summary=original.summary||'';payload.category=original.category||''}
     else payload.excerpt=original.excerpt||''
     if(!original.id){payload.slug=original.slug;await studioRequest(kind,{method:'POST',body:JSON.stringify(payload)})}
