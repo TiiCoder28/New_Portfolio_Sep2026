@@ -2,6 +2,7 @@
   <div v-if="project" class="wrap case-study">
     <RouterLink to="/work" class="text-link">← All work</RouterLink>
     <div class="eyebrow case-eyebrow">CASE STUDY {{ project.number }} / {{ project.category }}</div>
+    <img v-if="project.logo" :src="project.logo" :alt="project.logoAlt || (project.name + ' logo')" class="case-logo" loading="eager" />
     <h1 class="case-title">{{ project.name }}<span class="dot">.</span></h1>
     <p class="case-deck">{{ project.summary }}</p>
     <figure class="case-cover">
@@ -50,6 +51,7 @@ const next = computed(() => {
 </script>
 
 <style scoped>
+.case-logo { display:block; width:min(430px,100%); max-height:145px; object-fit:contain; object-position:left center; margin-top:2rem; }
 .case-gallery { max-width: 960px; margin: 0 auto; padding: 2rem 0 4rem; }
 .case-gallery-item { margin: 0 0 3rem; }
 .case-gallery-item img { display: block; width: 100%; height: auto; background: #e8e5dc; border: 1px solid rgba(37,40,35,.12); }
