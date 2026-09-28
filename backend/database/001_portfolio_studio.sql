@@ -91,7 +91,7 @@ create policy "public published project or post blocks" on public.portfolio_bloc
 create policy "admins manage blocks" on public.portfolio_blocks for all to authenticated using (public.is_portfolio_admin()) with check (public.is_portfolio_admin());
 create policy "public approved media metadata" on public.portfolio_media for select to anon, authenticated using (approved_for_public);
 create policy "admins manage media metadata" on public.portfolio_media for all to authenticated using (public.is_portfolio_admin()) with check (public.is_portfolio_admin());
-create policy "public settings" on public.portfolio_site_settings for select to anon, authenticated using (true);
+-- Do not expose draft_value through public table SELECT. A later public API will return published_value only.
 create policy "admins manage settings" on public.portfolio_site_settings for all to authenticated using (public.is_portfolio_admin()) with check (public.is_portfolio_admin());
 
 -- Never create an open insert policy on admin_members. Provision your own auth user id
