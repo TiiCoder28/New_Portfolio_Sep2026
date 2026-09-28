@@ -6,6 +6,7 @@ Copy the contents of the supplied asset ZIP into the repository root; its paths 
 - `images/contentforge/hero.webp`: actual landing-page screenshot.
 - `images/contentforge/editor.webp`: actual content editor screenshot.
 - `images/contentforge/media.webp`: actual image replacement flow, including a visible storage quota error (kept as a real development state).
+- `images/betbetter/logo.png`: user-supplied original BetBetter branding. Extract the separate logo ZIP at the repository root.
 - `images/betbetter/hero.webp`: actual fixture screen.
 - `images/betbetter/markets.webp`: bookmaker market tables.
 - `images/betbetter/model-review.webp`: confidence/risk analysis.
